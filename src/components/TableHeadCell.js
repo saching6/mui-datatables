@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button';
 import clsx from 'clsx';
 import HelpIcon from '@mui/icons-material/Help';
+import InfoIcon from '@mui/icons-material/Info';
 import MuiTooltip from '@mui/material/Tooltip';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
@@ -237,7 +238,7 @@ const TableHeadCell = ({
           </Tooltip>
           {hint && (
             <Tooltip title={hint}>
-              <HelpIcon
+              <InfoIcon
                 className={!sortActive ? classes.hintIconAlone : classes.hintIconWithSortIcon}
                 fontSize="small"
               />
@@ -259,7 +260,7 @@ const TableHeadCell = ({
                 popper: classes.mypopper,
               }}
               enterDelay={300}>
-              <HelpIcon className={classes.hintIconAlone} fontSize="small" />
+              <InfoIcon className={classes.hintIconAlone} fontSize="small" />
             </Tooltip>
           )}
         </div>
